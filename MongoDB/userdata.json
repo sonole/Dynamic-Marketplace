@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "5ffc87beb23d000060001c28"
+  },
+  "First Name": "John",
+  "Last Name": "Zachos",
+  "Email Address": "john@gmail.com",
+  "Password": "$2y$10$cEdKM7SpUnx/sKmSq3qTH.ddRXQx9jlgVxfA70b2T4g6wtBDqr6Oi",
+  "Privileges": "customer"
+},{
+  "_id": {
+    "$oid": "5ffc89cfb23d000060001c29"
+  },
+  "First Name": "Alex",
+  "Last Name": "Paliampelos",
+  "Email Address": "alex@gmail.com",
+  "Password": "$2y$10$8wVyluDgitEzI7L6gcOx4.94m80vMxCOdIaCBkQ1cy0D58eP1fKwG",
+  "Privileges": "administrator"
+}]
