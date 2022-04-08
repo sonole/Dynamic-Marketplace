@@ -11,7 +11,7 @@
     <pre>mongoimport --db orders --collection userdata --jsonArray –file pathToFolder\mongoDB\my_db\orderinfo.json</pre>
   </li>
   <li><p>Open XAMMP app and run apache server</p></li>
-  <li><p>Open <a href="http://localhost/pricedoc/">http://localhost/pricedoc/</a> </p></li>
+  <li><p>Open <a  target="_blank" href="http://localhost/pricedoc/">http://localhost/pricedoc/</a> </p></li>
 </ol>
 <br><hr><br>
    
