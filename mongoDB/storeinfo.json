@@ -1,0 +1,281 @@
+[{
+  "_id": {
+    "$oid": "6000a7adbd500000d3006cc3"
+  },
+  "Name": "Tsakiris Mallas",
+  "AFM": "099360111",
+  "DOY": "ΦΑΕ ΠΕΙΡΑΙΑ",
+  "Address": "Εθνικης Αντιστασεως 150, Αγ.Δημητριος",
+  "TEL": "2109750115",
+  "Products": [
+    {
+      "_id": {
+        "$oid": "60034023695900000c002648"
+      },
+      "pID": "099360111/2",
+      "pNAME": "Renato Garini boots",
+      "pPRICE": "150",
+      "pBRAND": "Renato Garini",
+      "pDESCRIPTION": "autumn collection boot 2020",
+      "pSIZE": "42",
+      "pDEPARTMENT": "Men/Shoes/Βoot",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p2.jpg",
+      "pQUANTITY": "3"
+    },
+    {
+      "_id": {
+        "$oid": "6003403a695900000c002649"
+      },
+      "pID": "099360111/1",
+      "pNAME": "Old Skool",
+      "pPRICE": "75",
+      "pBRAND": "Vans",
+      "pDESCRIPTION": "Leather and textile upper",
+      "pSIZE": "44",
+      "pDEPARTMENT": "Men/Shoes/Trainers",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p1.jpg",
+      "pQUANTITY": "7",
+      "pCOMMENTS": [
+        {
+          "Comment": {
+            "username": "Alex",
+            "date": {
+              "$date": "2021-01-19T03:47:33Z"
+            },
+            "text": "1st comment from user",
+            "rating": "4"
+          }
+        }
+      ]
+    }
+  ],
+  "nextProductCounter": 3
+},{
+  "_id": {
+    "$oid": "6000a7bdbd500000d3006cc4"
+  },
+  "Name": "ZARA",
+  "AFM": "099360222",
+  "DOY": "ΙΖ' ΑΘΗΝΩΝ",
+  "Address": "Ευτυχιδου 41,  Παγκράτι",
+  "TEL": "21012345678",
+  "Products": [
+    {
+      "_id": {
+        "$oid": "6003405f695900000c00264a"
+      },
+      "pID": "099360222/1",
+      "pNAME": "NO IRON TEXTURED SHIRT",
+      "pPRICE": "25",
+      "pBRAND": "ZARA",
+      "pDESCRIPTION": "Regular fit shirt",
+      "pSIZE": "Large",
+      "pDEPARTMENT": "Men/Shirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p4.jpg",
+      "pQUANTITY": "12",
+      "pCOMMENTS": [
+        {
+          "Comment": {
+            "username": "John",
+            "date": {
+              "$date": "2021-02-09T14:24:29Z"
+            },
+            "text": "Δεν το έχω αγοράσει αλλά μπορώ να σχολιάσω",
+            "rating": "4"
+          }
+        },
+        {
+          "Comment": {
+            "username": "guest",
+            "date": {
+              "$date": "2021-02-09T14:24:57Z"
+            },
+            "text": "είμαι guest και επίσης μπορώ να σχολιάσω",
+            "rating": "2"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "60034085695900000c00264b"
+      },
+      "pID": "099360222/2",
+      "pNAME": "STRUCTURED FLORAL",
+      "pPRICE": "20",
+      "pBRAND": "ZARA",
+      "pDESCRIPTION": "Shirt made of comfortable high-stretch fabric. ",
+      "pSIZE": "Medium",
+      "pDEPARTMENT": "Men/Shirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p3.jpg",
+      "pQUANTITY": "5"
+    }
+  ],
+  "nextProductCounter": 3
+},{
+  "_id": {
+    "$oid": "60019b0ebf480000300061fa"
+  },
+  "Name": "Ralph S.A",
+  "AFM": "099360333",
+  "DOY": "ΔΟΥ Λάρισας",
+  "Address": "Κολοκοτρώνη 255",
+  "TEL": "2112085492",
+  "Products": [
+    {
+      "_id": {
+        "$oid": "60034140695900000c00264c"
+      },
+      "pID": "099360333/1",
+      "pNAME": "Pima Cotton",
+      "pPRICE": "110",
+      "pBRAND": "Ralph Lauren",
+      "pDESCRIPTION": "chest stripe jumper in navy marl",
+      "pSIZE": "Small, Medium, Large",
+      "pDEPARTMENT": "Men/Sweatshirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p5.jpg",
+      "pQUANTITY": "9"
+    },
+    {
+      "_id": {
+        "$oid": "60034164695900000c00264d"
+      },
+      "pID": "099360333/2",
+      "pNAME": "Lime Crew Neck",
+      "pPRICE": "40",
+      "pBRAND": "Ralph Lauren",
+      "pDESCRIPTION": "player logo t-shirt in kiwi lime",
+      "pSIZE": "Small, Medium",
+      "pDEPARTMENT": "Men/T-Shirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p7.jpg",
+      "pQUANTITY": "7"
+    }
+  ],
+  "nextProductCounter": 3
+},{
+  "_id": {
+    "$oid": "60019ce6bf480000300061fd"
+  },
+  "Name": "Alter Shops",
+  "AFM": "099360123",
+  "DOY": "Α' ΑΘΗΝΩΝ",
+  "Address": "Λεωφόρος Βουλιαγμένης 276",
+  "TEL": "2109709920",
+  "Products": [
+    {
+      "_id": {
+        "$oid": "60033b3b695900000c002644"
+      },
+      "pID": "099360123/1",
+      "pNAME": "Training Crew Neck",
+      "pPRICE": "23",
+      "pBRAND": "Adidas",
+      "pDESCRIPTION": "co-ord in navy",
+      "pSIZE": "Large, XLarge",
+      "pDEPARTMENT": "Men/Shoes/T-Shirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p6.jpg",
+      "pQUANTITY": "2"
+    },
+    {
+      "_id": {
+        "$oid": "60033b5e695900000c002645"
+      },
+      "pID": "099360123/2",
+      "pNAME": "Air Zoom-Type",
+      "pPRICE": "120",
+      "pBRAND": "Nike",
+      "pDESCRIPTION": "Mid-cut design, black/white",
+      "pSIZE": "41,42,43,44",
+      "pDEPARTMENT": "Men/Shoes/Trainers",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p9.jpg",
+      "pQUANTITY": "3"
+    },
+    {
+      "_id": {
+        "$oid": "60033fda695900000c002646"
+      },
+      "pID": "099360123/4",
+      "pNAME": "Tuxedo Blazer",
+      "pPRICE": "75",
+      "pBRAND": "ASOS Design",
+      "pDESCRIPTION": "super skinny tuxedo blazer with plisse velvet in black",
+      "pSIZE": "Large",
+      "pDEPARTMENT": "Men/Blazer",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p10.jpg",
+      "pQUANTITY": "1"
+    },
+    {
+      "_id": {
+        "$oid": "60034008695900000c002647"
+      },
+      "pID": "099360123/3",
+      "pNAME": "Turtle Neck Jumper",
+      "pPRICE": "25",
+      "pBRAND": "ASOS Design",
+      "pDESCRIPTION": "muscle fit ribbed turtle neck jumper in white",
+      "pSIZE": "Medium, Large",
+      "pDEPARTMENT": "Men/Sweatshirt",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p8.jpg",
+      "pQUANTITY": "10"
+    }
+  ],
+  "nextProductCounter": 5
+},{
+  "_id": {
+    "$oid": "60057ff5c34000008a00214a"
+  },
+  "Name": "Test Store",
+  "AFM": "099360666",
+  "DOY": "ΦΑΕ ΠΕΙΡΑΙΑ",
+  "Address": "kolonaki",
+  "TEL": "211099885",
+  "Products": [
+    {
+      "_id": {
+        "$oid": "6006563a3f1c0000c80034a8"
+      },
+      "pID": "099360666/1",
+      "pNAME": "old school 2",
+      "pPRICE": "50",
+      "pBRAND": "Vans",
+      "pDESCRIPTION": "black/white",
+      "pSIZE": "42,43,43",
+      "pDEPARTMENT": "Men/Shoes/Trainers",
+      "pTHUMBNAIL": "http://127.0.0.1/pricedoc/assets/img/products/p1.jpg",
+      "pQUANTITY": "6",
+      "pCOMMENTS": [
+        {
+          "Comment": {
+            "username": "Alex",
+            "date": {
+              "$date": "2021-01-19T03:48:09Z"
+            },
+            "text": "1st comment from user",
+            "rating": "4"
+          }
+        },
+        {
+          "Comment": {
+            "username": "Alex",
+            "date": {
+              "$date": "2021-01-19T04:32:25Z"
+            },
+            "text": "good!!!!",
+            "rating": "5"
+          }
+        },
+        {
+          "Comment": {
+            "username": "John",
+            "date": {
+              "$date": "2021-02-05T14:05:57Z"
+            },
+            "text": "not impressed at all",
+            "rating": "2"
+          }
+        }
+      ]
+    }
+  ],
+  "nextProductCounter": 2
+}]
