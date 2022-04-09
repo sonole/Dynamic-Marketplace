@@ -44,7 +44,7 @@
 <div>
 <h3>How to run this project</h3>
 <ol>
-  <li><p>Coppy pricedoc folder to the httdocs folder of XAMMPP.</p></li>
+  <li><p>Coppy pricedoc folder to the httdocs folder of XAMPP.</p></li>
   <li><p>Install <a href="https://www.mongodb.com/try/download"  target="_blank">MongoDB</a> and <a target="_blank" href="https://www.mongodb.com/try/download/database-tools">Database tools</a></p></li>
   <li><p>Download mongoDB folder, open cmd inside the folder and then import the collections with the following commnads:</p>
     <pre>mongoimport --db loginreg --collection userdata --jsonArray –file pathToFolder\mongoDB\userdata.json</pre>
