@@ -1,8 +1,7 @@
 <div>
   <h1>Dynamic Marketplace</h1>
-  <p>Example of marketplace using MongoDB and HTML, CSS, Bootstrap, JavaScript, jQuery, AngularJS, PHP</p>
-  <p>As admin you can add/edit products, stores</p>
-  <p>As user you can register, add products to cart from many stores, order, comment on products and see order history</p>
+  <p>Example of marketplace using MongoDB and HTML, CSS, Bootstrap, JavaScript, jQuery, AngularJS, PHP<br>In this marketplace you can explore and buy products from partner stores!</p>
+  <p>As <strong>admin</strong> you can add/edit products, stores<br>As <strong>user</strong>  you can register, add products to cart from many stores, order, comment on products and see order history.</p>
 </div>
 <br><hr><br>
 
@@ -10,35 +9,34 @@
   <h3>Database</h3>
   <p>In this DB we have 3 collections that the website uses a) loginreg b) stores c) orders</p>
   <ol type="a">
-    <li><p><strong>loginreg</strong>: To collection αυτή έχει μόνο ένα document με όνομα userdata και εκεί αποθηκεύονται τα στοιχεία τον χρηστών που κάνουν εγγραφή μέσω της αντίστοιχης φόρμας.
-By default όλοι οι χρήστες στο πεδίο privileges έχουν attribute “customer” για να αλλαχτεί σε “administrator” πρέπει να εκτελεστεί και το αντίστοιχο query.
-Στο collection μας έχουμε 2 users όπου ο ένας είναι administrator και ο άλλος customer. Σημ: Τα password περνάνε από hash function.</li></p>
-    <li><p><strong>stores</strong>: Ομοίως πάλι έχουμε ένα document με όνομα storeinfo όπου εκεί κρατάμε τα στοιχεία του καταστήματος, τα προϊόντα που πουλάει καθώς και τα σχόλια των προϊόντων. Στο screenshot φαίνεται το πρώτο κατάστημα που έχει εκχωρηθεί, με τα στοιχεία του, με 2 προϊόντα που πουλάει καθώς και τα σχόλια από το 1 προϊών.
-Σημ: Σαν sku (stock-keeping unit) για την αναζήτηση και την υλοποίηση διαφόρων διαδικασιών έχει χρησιμοποιηθεί το _id, pID, καθώς και το pTHUMBNAIL. Π.χ μπορεί να ψάξω προϊόντα με βάση το thumbnail τους αφού θεωρώ ότι κάθε ίδιο προϊόν θα έχει αυτό το thumbnail. Η λογική είναι λάθος θα έπρεπε να είχα χρησιμοποιήσει έναν κωδικό SKU. Δεν υλοποιήθηκε τέτοια διαδικασία γιατί θα έπρεπε ο διαχειριστής κάθε φορά που προσθέτει προϊόν να ψάχνει ποιον κωδικό να βάλει, κλπ.
-Σημ2: Τα commends προστίθενται στο προϊόν με την μέθοδο push, οπότε αν το προϊόν δεν έχει σχόλια τότε δεν θα έχει και το αντίστοιχο field “pCOMMENTS”.
-Σημ3: To nextProductCounter αναφέρεται στα συνολικά προϊόντα που έχει το κατάστημα +1.</li></p>
-    <li><p><strong>orders</strong>: Σε αυτή τo collection έχουμε μόνο το document orderinfo. Για κάθε παραγγελία που γίνεται προστίθεται και μία εγγραφή. Παρακάτω φαίνονται 2 διαφορετικές παραγγελίες από τον ίδιο χρήστη σε διαφορετικές ημερομηνίες. Όπως αναφέρθηκε και προηγουμένως το thumbnail χρησιμοποιείται σαν SKU. Επίσης για κάθε προϊών που παραγγέλνετε δημιουργείται και ένα διαφορετικό collection.
-Π.χ αν σε μία παραγγελία έχουμε στο καλάθι 3 προϊόντα, θα δημιουργηθούν 3 εγγραφές στο document και όχι 1 ενιαία. Αυτό γίνεται για να μπορούμε να διαγράφουμε τις παραγγελίες εύκολα από διαφορετικά καταστήματα.
-Όπως φαίνεται παρακάτω για κάθε προϊών αποθηκεύουμε και πόσα τεμάχια/νούμερο θα πάρει από αυτό το προϊόν.</li></p>
+    <li><p><strong>loginreg</strong>: This collection has only one document named userdata and it stores the data of the users who register through the corresponding form. By default all users in the privileges field have the attribute "customer". Tochange "customer" to "administrator" the corresponding query must be executed. In our collection we have 2 users where one is administrator and the other customer. Note: Passwords pass through a hash function.</li></p>
+    <li><p><strong>stores</strong>: Here We also have a document called storeinfo where we keep the details of the store, the products it sells and the product reviews.
+      <ul>
+        <li>Note 1: _id, pID, as well as pTHUMBNAIL have been used as sku (stock-keeping unit) for the search and implementation of various procedures. For example, I can search for products based on their thumbnail since I believe that every same product will have this thumbnail. Logic is wrong I should have used a SKU code. No such procedure was implemented because every time the administrator adds a product he has to look for which code to enter, etc.</li>
+        <li>Note 2: Commends are added to the product with the push method, so if the product has no comments then it will not have the corresponding field "pCOMMENTS".</li>
+        <li>Note 3: nextProductCounter refers to the total products that the store has +1.</li>
+      </ul>
+    </li></p>
+    <li><p><strong>orders</strong>: In this collection we have only the document orderinfo. For each order made, an entry is added. As mentioned before, the thumbnail is used as a SKU. Also for each product you order a different collection is created. For example, if in an order we have 3 products in the basket, 3 entries will be created in the document and not 1 single. This is done so that we can easily delete orders from different stores.</li></p>
   </ol>
 </div>
 <br><hr><br>
 
 <div>
-<h3>Περιγραφή αρχείων σελίδας</h3>
+<h3>Description of page files</h3>
 <ul>
-  <li><p>Assets (περιέχει css, img, js, includes)</p></li>
-  <li><p>Css όλα τα stylesheets που χρησιμοποιούνται
-  <li><p>Img όλες οι φωτογραφίες που χρησιμοποιούνται, μεταξύ αυτών έχουμε logo, favicon, banners, φωτογραφίες του footer, φωτογραφίες προϊόντων, φωτογραφίες αρχικής σελίδας, κάποια avatars για testimonials.</p></li>
-  <li><p>Js εκεί βρίσκονται τα javascript αρχεία μου. εκεί έχω υλοποιήσει τα myscript, search, voiceserach και smoothscrool.
-To myscript χρησιμοποιείται για να ανοιγοκλείνουν οι φόρμες μετά από τα reload των σελιδών.</p></li>
-  <li><p>Incudes Εδώ έχουμε και το ζουμί όλου του site Εκεί θα βρούμε όλες τις φόρμες καθώς και τις φόρμες που αποτελούν το «action», δηλαδή την επικοινωνία/τροποιήση της βάσης. Θα βρούμε επίσης και κάποια αρχεία για την προβολή του header,menu σε κινητά.</p></li>
-  <li><p>fonts</p></li>
-  <li><p>index.php (αρχική σελίδα)</p></li>
-  <li><p>marketplace.php (σελίδα προβολής όλων των διαθέσιμων προϊόντων</p></li></p></li>
-  <li><p>product-preview.php (δυναμική προβολή επιλεγμένου προϊόντος)</p></li>
-  <li><p>cart.php (σελίδα προβολής του καλαθιού μας)</p></li>
-  <li><p>contact-us.php (σελίδα επικοινωνίας)</p></li></p></li>
+  <li><p>Assets</p></li>
+  <ul>
+    <li><p>Css all the stylesheets used.
+    <li><p>Img -> all the photos used, among them we have logo, favicon, banners, footer photos, product photos, homepage photos, some avatars for testimonials.</p></li>
+    <li><p>Js -> js files for voicesearch, smoothscrool, search and myscript. Myscript is used to open and close forms after reloading pages.</p></li>
+    <li><p>Incudes -> Here we have many key important feauters of the site. We have all forms as well the action forms that establise the communication/modification of the db. We will also find some files for viewing the header, menu on mobiles.</p></li>
+  </ul>
+  <li><p>index.php -> homepage</p></li>
+  <li><p>marketplace.php -> in this page you can see all the available products</p></li></p></li>
+  <li><p>product-preview.php -> dynamic view of selected product</p></li>
+  <li><p>cart.php -> cart page</p></li>
+  <li><p>contact-us.php -> contact us page</p></li></p></li>
 </ul>
 </div>
 <br><hr><br>
