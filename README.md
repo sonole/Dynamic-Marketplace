@@ -2,6 +2,7 @@
   <h1>Dynamic Marketplace</h1>
   <p>Example of marketplace using MongoDB and HTML, CSS, Bootstrap, JavaScript, jQuery, AngularJS, PHP<br>In this marketplace you can explore and buy products from partner stores!</p>
   <p>As <strong>admin</strong> you can add/edit products, stores<br>As <strong>user</strong>  you can register, add products to cart from many stores, order, comment on products and see order history.</p>
+  <p>Note that the website is in greek language so many features will be difficult to use.</p>
 </div>
 <br><hr><br>
 
